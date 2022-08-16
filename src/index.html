@@ -11,7 +11,187 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+
     <script type="text/javascript" src="./main.js"></script>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+      <div class="section">
+        <fieldset>
+          <legend>Personal information</legend>
+
+
+          <div class="content">
+            <label>
+              Surname:
+              <input type="text" name="Surname">
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              Name:
+              <input type="text" name="Name">
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              How old are you?
+              <input
+              type="number"
+              name="age"
+              min="0"
+              max="150"
+              value="12">
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              Full day of birh:
+              <input type="date" name="birh">
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              I accept the turm of the argreement
+              <input type="checkbox" name="turm">
+            </label>
+          </div>
+
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>Registration</legend>
+
+
+          <div class="content">
+            <label>
+              E-mail:
+              <input
+              type="email"
+              name="Email"
+              placeholder="email@example.com">
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              Password:
+              <input type="password" name="password">
+            </label>
+          </div>
+
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>An interesting fack about you!</legend>
+
+          <div>
+            Do you love cats?
+
+            <label>
+              <input type="radio" name="yes">
+              yes
+            </label>
+
+            <label>
+              <input type="radio" name="not">
+              not
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              What your favorite color?
+              <input
+              type="color"
+              name="color"
+              value="black">
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              What time you go to bed?
+              <input
+              type="datetime-local"
+              name="time_go_to_bed">
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              What are you favorite brands of cars?
+
+              <select name="cars">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mersedes">Mersedes</option>
+              </select>
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+              How do are you rate our work?
+              <input
+              type="range"
+              name="work"
+              min="0"
+              max="100">
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>Additional info</legend>
+
+          <div>
+            <label>
+              Comments:
+              <textarea name="comments"></textarea>
+            </label>
+          </div>
+
+
+          <div class="content">
+            <label>
+          Woud you recommend us?
+
+              <select name="recommend"
+                  value="yes" selected>
+                <option value="Yes">Yes</option>
+                <option value="not">Not</option>
+              </select>
+            </label>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+      <div>
+        <button type="submit">
+          Submit
+        </button>
+      </div>
+
+
+    </form>
   </body>
 </html>
