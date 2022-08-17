@@ -1,11 +1,12 @@
-.content {
-  padding: 4px;
-}
-
-.section {
-  padding: 10px;
-}
-
 body {
-  font-weight: 550;
+  padding-right: 0;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.field {
+  margin-bottom: 20px;
 }
